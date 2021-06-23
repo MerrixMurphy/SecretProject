@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Loading">
+
+    <ImageView
+        android:id="@+id/backone"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:background="@drawable/border_24dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="377dp"
+        android:layout_height="372dp"
+        android:gravity="center"
+        android:text="Are you ready to start?"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="164dp"
+        android:layout_height="76dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+    <TextView
+        android:id="@+id/startfail"
+        android:layout_width="231dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/riddleanswer"
+        android:layout_width="350dp"
+        android:layout_height="44dp"
+        android:background="@drawable/border_24dp"
+        android:gravity="center"
+        android:hint="Answer Here"
+        android:textColor="#000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startbutton" />
+
+    <TextView
+        android:id="@+id/vone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteY="716dp" />
+
+    <TextView
+        android:id="@+id/hint1"
+        android:layout_width="70dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="Need a Hint?"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

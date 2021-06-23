@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/heavymusicarr"
+        android:layout_width="164dp"
+        android:layout_height="109dp"
+        android:scaleX="-1"
+        android:onClick="heavymusicarr"
+        app:layout_constraintBottom_toTopOf="@+id/stndmusictitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/stndmusicarr"
+        android:layout_width="180dp"
+        android:layout_height="107dp"
+        android:scaleX="-1"
+        android:onClick="stndmusicarr"
+        app:layout_constraintBottom_toTopOf="@+id/lightmusictitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/lightmusicarr"
+        android:layout_width="182dp"
+        android:layout_height="79dp"
+        android:onClick="lightmusicarr"
+        android:saveEnabled="false"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/hmusictitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heavy"
+        app:layout_constraintBottom_toTopOf="@+id/heavymusicarr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/stndmusictitle"
+        android:layout_width="76dp"
+        android:layout_height="30dp"
+        android:text="Standard"
+        app:layout_constraintBottom_toTopOf="@+id/stndmusicarr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lightmusictitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        app:layout_constraintBottom_toTopOf="@+id/lightmusicarr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/vsix"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="694dp"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/backsix"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:background="@drawable/border_24dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/nights"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Nights in White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/puff"
+        app:layout_constraintTop_toBottomOf="@+id/lightmusicarr" />
+
+    <TextView
+        android:id="@+id/plane"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Jet Plane"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Maria"
+        app:layout_constraintTop_toBottomOf="@+id/lightmusicarr" />
+
+    <TextView
+        android:id="@+id/puff"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Puff the Magic Dragon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plane"
+        app:layout_constraintTop_toBottomOf="@+id/lightmusicarr" />
+
+    <TextView
+        android:id="@+id/Maria"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Ave Maria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dust"
+        app:layout_constraintTop_toBottomOf="@+id/lightmusicarr" />
+
+    <TextView
+        android:id="@+id/dust"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Dust in the Wind"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lightmusicarr" />
+
+    <TextView
+        android:id="@+id/grace"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Amazing Grace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nights"
+        app:layout_constraintTop_toBottomOf="@+id/lightmusicarr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
