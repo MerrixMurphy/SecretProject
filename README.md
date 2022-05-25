@@ -1,6 +1,6 @@
 # SecretProject
 
-## Current Status: Refactor
+## Current Status: Completed
 
 This app was a one time addition to an escape room I made. It features several fun mini puzzles that allowed me to play around and mimic other things I saw. Some of these include a puzzle based on items in the escape room, an Organ Trail minigame, a login puzzle, and an RPG battle system similar to pokemon.
 
